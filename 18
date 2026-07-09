@@ -1,0 +1,47 @@
+def multiplication():
+    number = int(input("Enter a number 1-10: "))
+    for i in range(1, 11):
+       print(f"{number} x {i} = {number * i}")
+  
+def Factorial():
+    number = int(input("Enter a number 1-10: "))
+    result = 1
+    
+    for i in range(1, number + 1):
+        result = result * i
+
+    print(result)
+
+def Squares():
+    number = int(input("Enter a number 1-10: "))
+    for i in range(number):
+        print(i * i)
+
+def Cubes():
+    number = int(input("Enter a number 1-10: "))
+    for i in range(number):
+        print(i * i * i)
+
+while True:
+  print("====== MENU ======")
+  print("1 - Multiplication table")
+  print("2 - Factorial of a Number")
+  print("3 - Squares of Numbers")
+  print("4 - Cubes of Numbers")
+  print("5 - Exit")
+
+  Choice = input("Choice: ")
+
+  if Choice == "1":
+    multiplication()
+  elif Choice == "2":
+    Factorial()
+  elif Choice == "3":
+    Squares()
+  elif Choice == "4":
+    Cubes()
+  elif Choice == "5":
+    print("Bye")
+  else:
+    print("Choice 1-5")
+    break
